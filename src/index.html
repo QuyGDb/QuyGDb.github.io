@@ -1,9 +1,4 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
--->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -24,16 +19,31 @@
   </head>
 
   <body>
-    <div class="glow-overlay"></div>
     <div id="top"></div>
+    
+    <!-- Navigation Header -->
+    <header class="main-header">
+      <nav class="nav-container">
+        <div class="nav-links">
+          <a href="#about" class="nav-item active">About Me</a>
+          <a href="#projects" class="nav-item">Projects & Demos</a>
+          <a href="https://trinhquy.pages.dev/" class="nav-item">Portfolio3D</a>
+          <a href="assets/TrinhXuanQuy_CV.pdf" target="_blank" class="nav-item">RESUME</a>
+        </div>
+        <div class="nav-right">
+        </div>
+      </nav>
+    </header>
 
     <!-- Hero Section -->
     <section id="hero" class="hero-section">
       <div class="content-container">
-        <h1 class="hero-title">
-          Hi, my name is <span class="accent-text">Trịnh Xuân Quý</span><br />
-          I'm a Unity Developer.
+        <h1 class="hero-title-new">
+          HI, MY NAME IS <span class="accent-text-glow">TRỊNH XUÂN QUÝ</span>
         </h1>
+        <p class="hero-subtext">
+          I AM A <span class="accent-text-secondary">UNITY DEVELOPER</span>
+        </p>
         <div class="hero-cta">
           <a class="btn-primary" href="#about">Know more</a>
         </div>
@@ -47,11 +57,8 @@
         <div class="about-content">
           <div class="about-info">
             <p class="about-text">
-              With 1 year of Unity experience, my primary goal for 2026 is to dive deep into high-performance programming with Unity DOTS, Shader/Compute pipelines via HLSL, and modern UI development using UI Toolkit.
+              With 1 year of Unity experience, my primary goal for 2026 is to dive deep into high-performance programming with Unity DOTS, Compute/HLSL Shaders in Unity, and modern UI development using UI Toolkit.
             </p>
-            <div class="about-action">
-              <a target="_blank" class="btn-secondary" href="https://www.canva.com/design/DAHB9VHbUsA/99cyoCP-hD_dAn-lLOQ9nw/edit?utm_content=DAHB9VHbUsA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">View Resume</a>
-            </div>
           </div>
         </div>
       </div>
@@ -77,13 +84,13 @@
                 <a target="_blank" class="btn-link" href="https://trinhquy.pages.dev/">Visit</a>
             </div>
             <div class="project-media-grid">
-              <video autoplay loop muted playsinline>
+              <video class="portrait-frame" autoplay loop muted playsinline>
                 <source src="assets/portfolio1.mp4" type="video/mp4">
               </video>
-              <video autoplay loop muted playsinline>
+              <video class="portrait-frame" autoplay loop muted playsinline>
                 <source src="assets/portfolio2.mp4" type="video/mp4">
               </video>
-              <video autoplay loop muted playsinline>
+              <video class="portrait-frame" autoplay loop muted playsinline>
                 <source src="assets/portfolio3.mp4" type="video/mp4">
               </video>
             </div>
@@ -105,16 +112,16 @@
               </div>
             </div>
             <div class="project-media-grid">
-              <video autoplay loop muted playsinline>
+              <video class="portrait-frame" autoplay loop muted playsinline>
                 <source src="assets/AR1.mp4" type="video/mp4">
               </video>
-              <video autoplay loop muted playsinline>
+              <video class="portrait-frame" autoplay loop muted playsinline>
                 <source src="assets/AR2.mp4" type="video/mp4">
               </video>
-              <video autoplay loop muted playsinline>
+              <video class="portrait-frame" autoplay loop muted playsinline>
                 <source src="assets/AR3.mp4" type="video/mp4">
               </video>
-              <video autoplay loop muted playsinline>
+              <video class="portrait-frame" autoplay loop muted playsinline>
                 <source src="assets/AR4.mp4" type="video/mp4">
               </video>
             </div>
@@ -137,13 +144,13 @@
               </div>
             </div>
             <div class="project-media-flex">
-              <video autoplay loop muted playsinline>
+              <video class="landscape-frame" autoplay loop muted playsinline>
                 <source src="assets/RPG1.mp4" type="video/mp4">
               </video>
-              <video autoplay loop muted playsinline>
+              <video class="landscape-frame" autoplay loop muted playsinline>
                 <source src="assets/RPG2.mp4" type="video/mp4">
               </video>
-              <video autoplay loop muted playsinline>
+              <video class="landscape-frame" autoplay loop muted playsinline>
                 <source src="assets/RPG3.mp4" type="video/mp4">
               </video>
             </div>
@@ -166,10 +173,10 @@
               </div>
             </div>
             <div class="project-media-flex">
-              <video autoplay loop muted playsinline>
+              <video class="portrait-frame" autoplay loop muted playsinline>
                 <source src="assets/BreaktheBrick1.mp4" type="video/mp4">
               </video>
-              <video autoplay loop muted playsinline>
+              <video class="portrait-frame" autoplay loop muted playsinline>
                 <source src="assets/BreaktheBrick2.mp4" type="video/mp4">
               </video>
             </div>
