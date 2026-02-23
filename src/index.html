@@ -5,65 +5,52 @@
   Created by Jacobo Martinez.
 -->
 <!DOCTYPE html>
-<html lang="en" class="sr">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.jpg" />
-    <title>[Trịnh Quý] | Unity Developer</title>
-    <meta name="keywords" content="Unity, Trịnh Quý, Game Developer" />
-    <meta name="description" content="[Trịnh Xuân Quý] | Unity Developer" />
+    <title>Trịnh Quý 🌲</title>
+    <meta name="keywords" content="Unity, Trịnh Quý, Game Developer, DOTS, HLSL" />
+    <meta name="description" content="Trịnh Quý 🌲 | Unity Enthusiast & High-Performance Programming" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="styles.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
     <script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
   </head>
 
   <body>
+    <div class="glow-overlay"></div>
     <div id="top"></div>
 
     <!-- Hero Section -->
-    <section id="hero" class="jumbotron">
-      <div class="container">
-        <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Trịnh Xuân Quý</span><br />
-          I'm the Unity Developer.
+    <section id="hero" class="hero-section">
+      <div class="content-container">
+        <h1 class="hero-title">
+          Hi, my name is <span class="accent-text">Trịnh Xuân Quý</span><br />
+          I'm a Unity Developer.
         </h1>
-        <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Know more</a>
-        </p>
+        <div class="hero-cta">
+          <a class="btn-primary" href="#about">Know more</a>
+        </div>
       </div>
     </section>
 
     <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title load-hidden">About me</h2>
-        <div class="row about-wrapper">
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image load-hidden">
-              <img
-                alt="Profile Image"
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="assets/profile.jpg"
-              />
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info load-hidden">
-              <p class="about-wrapper__info-text">
-                I'm a final-year university student passionate about game development. After over a year of self-learning Unity, I'm now exploring XR technologies and excited to build immersive digital experiences.
-              </p>
-              <span class="d-flex mt-3">
-                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="assets/resume.pdf">View Resume</a>
-              </span>
+    <section id="about" class="about-section">
+      <div class="content-container">
+        <h2 class="section-heading">About me</h2>
+        <div class="about-content">
+          <div class="about-info">
+            <p class="about-text">
+              With 1 year of Unity experience, my primary goal for 2026 is to dive deep into high-performance programming with Unity DOTS, Shader/Compute pipelines via HLSL, and modern UI development using UI Toolkit.
+            </p>
+            <div class="about-action">
+              <a target="_blank" class="btn-secondary" href="assets/resume.pdf">View Resume</a>
             </div>
           </div>
         </div>
@@ -71,132 +58,100 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Highlight Projects</h2>
+    <section id="projects" class="projects-section">
+      <div class="content-container">
+        <h2 class="section-heading">Highlight Projects</h2>
 
-          <!-- Graduation Project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Graduation Project - Record Store (AR/MR)</h3>
-                <p class="mb-4">
-                  An AR app that lets you place and explore a virtual vinyl shop in your real space. Browse music genres via interactive artworks. Select “Bohemian Rhapsody” to enter a live concert scene.
-                </p>
-                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://www.youtube.com/watch?v=dx8iRl3W1AQ&t=170s">See Live</a>
-                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/QuyGDb/GraduationProject">Source Code</a>
+        <div class="projects-list">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-content">
+              <h3 class="project-title">Graduation Project - Record Store (AR/MR)</h3>
+              <p>
+                An AR app that lets you place and explore a virtual vinyl shop in your real space. Browse music genres via interactive artworks.
+              </p>
+              <div class="project-links">
+                <a target="_blank" class="btn-link" href="https://www.youtube.com/watch?v=dx8iRl3W1AQ&t=170s">See Live</a>
+                <a target="_blank" class="btn-accent" href="https://github.com/QuyGDb/GraduationProject">Source Code</a>
               </div>
             </div>
-            <div class="col-lg-8 col-sm-12 mb-4">
-              <div class="project-wrapper__image load-hidden d-flex flex-wrap gap-3">
-                <img alt="AR1" class="img-fluid" style="width: 24%" src="assets/AR1.gif" />
-                <img alt="AR2" class="img-fluid" style="width: 24%" src="assets/AR2.gif" />
-                <img alt="AR3" class="img-fluid" style="width: 24%" src="assets/AR3.gif" />
-                <img alt="AR4" class="img-fluid" style="width: 24%" src="assets/AR4.gif" />
+            <div class="project-media-grid">
+              <img alt="AR1" src="assets/AR1.gif" />
+              <img alt="AR2" src="assets/AR2.gif" />
+              <img alt="AR3" src="assets/AR3.gif" />
+              <img alt="AR4" src="assets/AR4.gif" />
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-content">
+              <h3 class="project-title">Bermudos (2D)</h3>
+              <p>
+                Adventure ARPG inspired by the Dungeon Gunner Roguelike series. Players journey as Ryu to uncover mystical secrets.
+              </p>
+              <div class="project-links">
+                <a target="_blank" class="btn-link" href="https://www.youtube.com/watch?v=vz1LPZDmykY&t=37s">See Live</a>
+                <a target="_blank" class="btn-accent" href="https://github.com/QuyGDb/Bermudos">Source Code</a>
               </div>
             </div>
-            
+            <div class="project-media-flex">
+              <img alt="RPG1" src="assets/RPG1.gif" />
+              <img alt="RPG2" src="assets/RPG2.gif" />
+              <img alt="RPG3" src="assets/RPG3.gif" />
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-content">
+              <h3 class="project-title">Break In Brick (3D)</h3>
+              <p>
+                A 3D mobile game using Rayfire for partial destruction. Features Idle and Arcade mechanics with deep engagement.
+              </p>
+              <div class="project-links">
+                <a target="_blank" class="btn-link" href="https://www.shorts/bEdwRYFbAZI">See Live</a>
+                <a target="_blank" class="btn-accent" href="https://github.com/QuyGDb/Break-The-Brick">Source Code</a>
+              </div>
+            </div>
+            <div class="project-media-flex">
+              <img alt="Brick1" src="assets/BreaktheBrick1.gif" />
+              <img alt="Brick2" src="assets/BreaktheBrick2.gif" />
+            </div>
+          </article>
+        </div>
+
+        <h2 class="section-heading small-margin">Other Projects</h2>
+        <div class="other-projects-grid">
+          <div class="small-card">
+            <h3>Dungeon Shooter</h3>
+            <p>Developed as part of Unity 2D Dungeon Gunner course on Udemy.</p>
+            <a target="_blank" class="btn-mini" href="https://github.com/QuyGDb/DungeonShooter">Source</a>
           </div>
-
-          <!-- Bermudos Project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Bermudos (2D)</h3>
-                <p class="mb-4">
-                  Adventure ARPG inspired by the Dungeon Gunner Roguelike series. Players journey as Ryu to uncover secrets of the mystical island Bermudos that grants wishes.
-                </p>
-                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://www.youtube.com/watch?v=vz1LPZDmykY&t=37s">See Live</a>
-                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/QuyGDb/Bermudos">Source Code</a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12 mb-4">
-              <img alt="RPG1" class="img-fluid" style="width: 32%" src="assets/RPG1.gif" />
-              <img alt="RPG2" class="img-fluid" style="width: 32%" src="assets/RPG2.gif" />
-              <img alt="RPG3" class="img-fluid" style="width: 32%" src="assets/RPG3.gif" />
-            </div>
-            
+          <div class="small-card">
+            <h3>Quiz Game</h3>
+            <p>A Firebase-powered quiz game with real-time data sync.</p>
+            <a target="_blank" class="btn-mini" href="https://github.com/QuyGDb/QuizGame">Source</a>
           </div>
-
-          <!-- Break In Brick -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Break In Brick (3D)</h3>
-                <p class="mb-4">
-                  A 3D mobile game inspired by Break the Sun. Combines Idle and Arcade mechanics with partial destruction using Rayfire. Features both First-Person and Third-Person views for deeper engagement.
-                </p>
-                <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://www.youtube.com/shorts/bEdwRYFbAZI">See Live</a>
-                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/QuyGDb/Break-The-Brick">Source Code</a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12 mb-4">
-              <img alt="Brick1" class="img-fluid" style="width: 30%" src="assets/BreaktheBrick1.gif" />
-              <img alt="Brick2" class="img-fluid" style="width: 30%" src="assets/BreaktheBrick2.gif" />
-            </div>
-            
-          </div>
-
         </div>
       </div>
     </section>
 
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Other projects</h2>
-          <div class="row">
-            <div class="col-lg-6 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Dungeon Shooter</h3>
-                <p class="mb-4">
-                  Dungeon Shooter was developed as part of the Unity 2D Dungeon Gunner Roguelike
-                  Development Course on Udemy. The project was completed following the course guidelines, achieving 90% completion.
-                </p>
-                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/QuyGDb/DungeonShooter">Source Code</a>
-              </div>
-            </div>
-            <div class="col-lg-6 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Quiz Game</h3>
-                <p class="mb-4">
-                  A Quiz Game where players answer questions, earn points, and track their progress. The
-                  game features multiple levels, a user-friendly interface, and real-time data synchronization using
-                  Firebase, ensuring a seamless and engaging experience
-                </p>
-                <a rel="noreferrer" target="_blank" class="cta-btn text-color-main" href="https://github.com/QuyGDb/QuizGame">Source Code</a>
-              </div>
-            </div>
-          </div>
-          
-    </section>
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">Email</p>
-          <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="https://mail.google.com/mail/?view=cm&fs=1&to=trinhxuanquy2k3@gmail.com">Send an email</a>
-        </div>
-      </div>
-    </section>
-    
-    
+
 
     <!-- Footer -->
-    <footer class="footer navbar-static-bottom">
-      <div class="container">
-        <a rel="noreferrer" href="#top" class="back-to-top"><i class="fa fa-angle-up fa-2x" aria-hidden="true"></i></a>
+    <footer class="main-footer">
+      <div class="content-container">
+        <a href="#top" class="back-to-top"><i class="fa-solid fa-angle-up fa-2x"></i></a>
         <div class="social-links">
-          <a rel="noreferrer" href="https://x.com/mi1suha" target="_blank"><i class="fa fa-twitter fa-inverse"></i></a>
-          <a rel="noreferrer" href="https://www.linkedin.com/in/trinhquy1702003/" target="_blank"><i class="fa fa-linkedin fa-inverse"></i></a>
-          <a rel="noreferrer" href="https://github.com/QuyGDb" target="_blank"><i class="fa fa-github fa-inverse"></i></a>
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=trinhxuanquy2k3@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/trinhquy1702003/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://discord.com/users/m1isuha" target="_blank"><i class="fa-brands fa-discord"></i></a>
         </div>
-        <hr />
+        <p class="copyright">&copy; 2026 Trịnh Quý</p>
       </div>
     </footer>
 
-    <script defer type="module" src="index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
