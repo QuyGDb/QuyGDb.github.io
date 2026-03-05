@@ -294,25 +294,44 @@ section {
 }
 
 .btn-link, .btn-accent {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 0.9rem;
   transition: var(--transition-smooth);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(10px);
 }
 
 .btn-link {
+  background: rgba(255, 255, 255, 0.05);
   color: var(--text-main);
 }
 
 .btn-link:hover {
+  background: rgba(255, 255, 255, 0.12);
   color: var(--accent-main);
+  border-color: var(--accent-main);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 242, 255, 0.1);
 }
 
 .btn-accent {
-  color: var(--accent-secondary);
+  background: rgba(112, 0, 255, 0.1);
+  color: #c084fc; /* Tint of secondary accent */
+  border-color: rgba(112, 0, 255, 0.2);
 }
 
 .btn-accent:hover {
-  text-decoration: underline;
+  background: rgba(112, 0, 255, 0.2);
+  color: #fff;
+  border-color: var(--accent-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(112, 0, 255, 0.2);
 }
 
 /* Media Grids within Projects */
